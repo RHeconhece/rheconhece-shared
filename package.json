@@ -1,0 +1,94 @@
+{
+  "name": "rheconhece-shared",
+  "version": "1.0.0",
+  "description": "Rheconhece shared libs",
+  "private": true,
+  "main": "build/main/index.js",
+  "module": "build/module/index.js",
+  "types": "build/main/index.d.ts",
+  "source": "src/index",
+  "files": [
+    "build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "prepack": "yarn install",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts,tsx}\"",
+    "test": "tsc",
+    "typescript": "tsc --noEmit",
+    "release": "release-it",
+    "prepare": "yarn build:main && yarn build:module",
+    "build:main": "tsc --module commonjs --outDir build/main",
+    "build:module": "tsc"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rheconhece/rheconhece-shared"
+  },
+  "author": "luicfrr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rheconhece/rheconhece-shared"
+  },
+  "homepage": "https://github.com/rheconhece/rheconhece-shared",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.6",
+    "@release-it/conventional-changelog": "^10.0.0",
+    "release-it": "^18.1.2",
+    "typescript": "~5.8.3"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "publishConfig": {
+      "registry": "https://registry.npmjs.org"
+    }
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "quoteProps": "consistent",
+          "singleQuote": true,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "useTabs": false
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "build/"
+  ],
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}

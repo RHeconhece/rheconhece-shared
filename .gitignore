@@ -1,0 +1,10 @@
+# Compiled
+/build/
+/lib/
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+*.dev**
