@@ -1,0 +1,55 @@
+/**
+ * Decimal/money IMask 
+ */
+export const decimalMask = [ {
+  mask: "\\0,\\00",
+  expose: true
+}, {
+  mask: "\\0,00",
+  expose: true
+}, {
+  mask: "0,00",
+  expose: true
+}, {
+  mask: "00,00",
+  expose: true
+}, {
+  mask: "000,00",
+  expose: true
+}, {
+  mask: "0.000,00",
+  expose: true
+}, {
+  mask: "00.000,00",
+  expose: true
+}, {
+  mask: "000.000,00",
+  expose: true
+}, {
+  mask: "0.000.000,00",
+  expose: true
+}, {
+  mask: "00.000.000,00",
+  expose: true
+}, {
+  mask: "000.000.000,00",
+  expose: true
+}, {
+  mask: "0.000.000.000,00",
+  expose: true
+}, {
+  mask: "00.000.000.000,00",
+  expose: true
+}, {
+  mask: "000.000.000.000,00",
+  expose: true
+}, {
+  mask: "0.000.000.000.000,00",
+  expose: true
+}, {
+  mask: "00.000.000.000.000,00",
+  expose: true
+}, {
+  mask: "000.000.000.000.000,00",
+  expose: true
+} ]
