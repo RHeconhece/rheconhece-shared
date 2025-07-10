@@ -2,7 +2,6 @@
   "name": "rheconhece-shared",
   "version": "1.0.1",
   "description": "Rheconhece shared libs",
-  "private": true,
   "main": "build/main/index.js",
   "module": "build/module/index.js",
   "types": "build/main/index.d.ts",
