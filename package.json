@@ -1,6 +1,6 @@
 {
   "name": "rheconhece-shared",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Rheconhece shared libs",
   "main": "build/main/index.js",
   "module": "build/module/index.js",
