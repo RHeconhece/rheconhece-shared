@@ -8,3 +8,6 @@
 .pnp.js
 
 *.dev**
+
+# macOS
+.DS_Store
