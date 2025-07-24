@@ -255,7 +255,8 @@ enum CommonCodes {
 
 enum FieldsCodes {
   FIELD_IN_USE = 'FIELD_IN_USE',
-  FIELD_NOT_FOUND = 'FIELD_NOT_FOUND'
+  FIELD_NOT_FOUND = 'FIELD_NOT_FOUND',
+  NO_FIELDS_TO_ORDER = 'NO_FIELDS_TO_ORDER'
 }
 
 enum PersonCodes {
