@@ -17,8 +17,8 @@
     "lint": "tsc --noEmit && eslint \"**/*.{js,ts,tsx}\"",
     "test": "tsc",
     "typescript": "tsc --noEmit",
-    "release": "release-it",
-    "prepare": "yarn build:main && yarn build:module",
+    "release": "yarn prepare && release-it",
+    "prepare": "rm -rf build && yarn build:main && yarn build:module",
     "build:main": "tsc --module commonjs --outDir build/main",
     "build:module": "tsc"
   },
