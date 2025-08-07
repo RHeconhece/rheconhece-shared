@@ -150,7 +150,7 @@ enum SignaturesCodes {
   /**
    * No selection provided
    */
-  NO_SELECTION_PROVIDED = 'NO_SELECTION_PROVIDED',
+  NO_SELECTWRITE_PROVIDED = 'NO_SELECTWRITE_PROVIDED',
   /**
    * More or less selection found
    */
