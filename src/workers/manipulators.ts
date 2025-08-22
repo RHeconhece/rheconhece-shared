@@ -66,7 +66,9 @@ export function dateString(
   hideTime?: boolean
 ): string {
   const [ date, hours ] = new Date( currentDate )
-    .toLocaleString( 'pt-BR' )
+    .toLocaleString( 'pt-BR', {
+      timeZone: 'America/Sao_Paulo'
+    } )
     // remove todas as vírgulas
     .replace( /,/g, '' )
     .split( ' ' )
