@@ -62,10 +62,13 @@ export function clearNumberString( string: string ): string {
  * @return {string} Converted
  */
 export function dateString(
-  currentDate: Date | string,
+  currentDate?: Date | string,
   hideTime?: boolean
 ): string {
-  const [ date, hours ] = new Date( currentDate )
+  const [ date, hours ] = ( ( () => {
+    if ( isEmpty( currentDate ) ) return new Date()
+    return new Date( currentDate )
+  } )() )
     .toLocaleString( 'pt-BR', {
       timeZone: 'America/Sao_Paulo'
     } )
