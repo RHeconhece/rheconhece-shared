@@ -8,7 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "isolatedModules": true,
-    "removeComments": true,
+    "removeComments": false,
     "declarationMap": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
