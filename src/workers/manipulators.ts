@@ -66,7 +66,12 @@ export function dateString(
   hideTime?: boolean
 ): string {
   const [ date, hours ] = ( ( () => {
-    if ( isEmpty( currentDate ) ) return new Date()
+    if (
+      isEmpty( currentDate, true ) || (
+        isEmpty( currentDate ) &&
+        typeof currentDate === 'string'
+      )
+    ) return new Date()
     return new Date( currentDate )
   } )() )
     .toLocaleString( 'pt-BR', {
