@@ -22,9 +22,6 @@
     "build:main": "tsc --module commonjs --outDir build/main",
     "build:module": "tsc"
   },
-  "engines": {
-    "node": "22"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rheconhece/rheconhece-shared"
